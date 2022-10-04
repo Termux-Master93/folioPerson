@@ -37,7 +37,8 @@ const Experienci = () => {
             parrafo: "Sección amigable con tarjetas y diseño paralax",
             tecnology: ["Boostrap", " , ", " HTML 5", " , ", "Css 3",],
             iconGit: <BsGithub />,
-            iconView: <FontAwesomeIcon icon={faShareFromSquare} />
+            iconView: <FontAwesomeIcon icon={faShareFromSquare} />,
+            link: "https://webcacecob.netlify.app/nosotros"
         },
         {
             id: 5,
