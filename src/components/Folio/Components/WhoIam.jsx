@@ -26,7 +26,7 @@ const WhoIam=()=>{
                         </p>
                         <h3 className="text-zinc-300">Aqui unas tecnologias que manejo actualmente.</h3>
                     </div>
-                    <div className="flex w-full content-center ml-[3rem]">
+                    <div className="flex w-full content-center ml-[0rem] sm:ml-[3rem]">
                         <picture className="text-center relative  my-auto">
                              <img className="" src="assets/elvis.png" alt="imagen elvis"></img>
                         </picture>
