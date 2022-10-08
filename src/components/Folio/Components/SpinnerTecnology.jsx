@@ -17,7 +17,7 @@ const SpinnerTecnology=()=>{
                 <div className={`${styled.box}`}><p className='text-white text-4xl mt-[50%]'><BsBootstrapFill/></p></div>
                 <div className={`${styled.box}`}><p className='text-white text-5xl xl:ml-[50%]  xl:mt-[50%]'><BiGitBranch/></p></div>
                 <div className={`${styled.box}`}><p className='text-white text-5xl'><SiMysql/></p></div>
-                <div className={`${styled.box}`}><p className='text-white xl:mt-[88%] text-4xl'><SiMicrosoftsqlserver/></p></div>
+                <div className={`${styled.box}`}><p className='text-white  mt-[25%] xl:mt-[88%] text-4xl'><SiMicrosoftsqlserver/></p></div>
                 <div className={`${styled.box}`}><p className='text-white text-5xl mt-[50%] xl:ml-[90%]'><SiTailwindcss/></p></div>
                 <div className={`${styled.box}`}><p className='text-white text-5xl mt-[50%] xl:ml-[90%]'><FaReact/></p></div>               
             </div>
