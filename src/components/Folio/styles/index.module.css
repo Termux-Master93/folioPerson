@@ -5,11 +5,16 @@
 .decoration_none{
     background-color: aqua;
 }
+
+
+
 .containerPather{
-    height: 300px;
-    width:250px;
+    height: 200px;
+    width:200px;
     perspective: 900px;
 }
+
+
 .containerHijo{
     transform-style: preserve-3d;
     height: 100%;
