@@ -95,7 +95,6 @@ const Experienci = () => {
                                     </div>
                                 </div>
                             </a>
-
                         </div>
                     ))
                 }

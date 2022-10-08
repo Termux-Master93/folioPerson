@@ -31,14 +31,14 @@ const LandingHeader = () => {
             <header className="container w-full m-auto ">
                 <div className="navbar">
                     <div 
-                        className="flex-1  lg:flex-none hover:tooltip hover:tooltip-open hover:tooltip-right"
+                        className="flex-1  lg:flex-none hover:tooltip hover:tooltip-open hover:tooltip-bottom xl:hover:tooltip-right"
                         data-tip={'Elvis Aguilera Santur '}
                         >
                         <img 
                             className="h-[4rem] cursor-pointer"
                             src="assets/elvis.png" 
                              alt="imagen logo" 
-                            />
+                        />
                     </div>
                     <div className="flex justify-end flex-1 px-2">
                         <div className="flex items-stretch">

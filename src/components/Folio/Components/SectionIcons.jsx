@@ -28,7 +28,6 @@ const SectionIcons = () => {
                         <ul className='pb-2 block'>
                             {icons.map((icono, index) => (
                                 <li
-                                //tooltip tooltip-open tooltip-left" data-tip="hello"
                                     key={index}
                                     className='text-cyan-600 text-3xl mb-3'>
                                   
@@ -66,7 +65,7 @@ const SectionIcons = () => {
                                     className='text-cyan-600 text-3xl text-center mr-3'>
                                     <a
                                         target="_BLANk"
-                                        className='hover:tooltip hover:tooltip-open hover:tooltip-right'
+                                        className='hover:tooltip hover:tooltip-open hover:tooltip-accent'
                                         data-tip={icono.toltip}
                                         href={icono.url}
                                         rel="noreferrer"
@@ -76,7 +75,7 @@ const SectionIcons = () => {
                             ))
                             }
                         </div>
-                <p className="text-slate-300 block text-medium pb-4">Diseñado y Contruido por <span className="text-cyan-600">@Elvis Aguilera Santur</span></p>
+                <p className="text-slate-300 block text-medium pb-4">Diseñado y Construido por <span className="text-cyan-600">@Elvis Aguilera Santur</span></p>
             </div>
         </>
 
