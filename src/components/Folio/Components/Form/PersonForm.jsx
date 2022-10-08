@@ -3,7 +3,7 @@ const PersonForm = () => {
         <>
             
             <form autoComplete="off">
-                <a name={4}/>
+                <a name={4} href="#" rel="noreferrer"> </a>
                 <div className="w-3/5  container mx-auto mt-[12rem]">
                     <h4 className="text-slate-300 font-bold text-[2rem] text-center mb-3">Degame tu inquietud o saludame..!</h4>
                     <p className="text-medium text-cyan-600 mb-8">Actualmente estoy buscando trabajar contigo, mi bandeja siempre esta abierta.</p>
