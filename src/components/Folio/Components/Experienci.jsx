@@ -75,15 +75,15 @@ const Experienci = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 gap-4 ">
                 {
                     folios.map((x, index) => (
-                        <div className=" grid grid-cols-1  rounded-md border border-slate-700 shadow-md mb-4 bg-slate-800">
+                        <div  key={index} className=" grid grid-cols-1  rounded-md border border-slate-700 shadow-md mb-4 bg-slate-800">
                             <a href={x.link} target="_BLANK" rel="noreferrer">
                                 <div className="rounded p-4 cursor-pointer">
-                                    <div className="flex justify-between cursor-pointer" key={index}>
+                                    <div className="flex justify-between cursor-pointer">
                                         <div>
                                             <FontAwesomeIcon icon={faFolder} className="boder text-[3rem] text-slate-300 border-slate-100" />
                                         </div>
                                         <div className="mt-[1.5rem] flex">
-                                            <a href={x.linkCode} target="_BLANCK" ><span className=" flex mr-2 text-slate-300">{x.iconGit}</span> </a>
+                                            <a href={x.linkCode} target="_BLANK" rel="noreferrer"><span className=" flex mr-2 text-slate-300">{x.iconGit}</span> </a>
                                         </div>
                                     </div>
                                     <div className="min-h-[4rem]">

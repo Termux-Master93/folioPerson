@@ -43,8 +43,8 @@ const LandingHeader = () => {
                     <div className="flex justify-end flex-1 px-2">
                         <div className="flex items-stretch">
                             <ul className="hidden  mt-2 md:hidden lg:grid lg:grid-cols-5">
-                                { barNav.map((el) => (
-                                        <a href={`#${el.id}`}><li className="border border-cyan-600 mr-2 py-1 text-gray-400 cursor-pointer"> {el.link}</li></a>
+                                { barNav.map((el,index) => (
+                                        <a key={index} href={`#${el.id}`} rel="noreferrer"><li className="border border-cyan-600 mr-2 py-1 text-gray-400 cursor-pointer"> {el.link}</li></a>
 
                                 ))}
                                 <a 
@@ -60,8 +60,8 @@ const LandingHeader = () => {
                                     <FontAwesomeIcon className="h-[1.5rem]" icon={faBars} />
                                 </label>
                                 <ul tabIndex={0} className="menu dropdown-content p-2 shadow bg-slate-900 rounded-box w-52 mt-4 opacity-10">
-                                    {barNav.map((el) => (
-                                            <a href={`#${el.id}`}><li className="border border-cyan-600 lg:mr-2 py-1 text-gray-400">{el.link}</li></a>
+                                    {barNav.map((el,index) => (
+                                            <a key={index} href={`#${el.id}`}><li className="border border-cyan-600 lg:mr-2 py-1 text-gray-400">{el.link}</li></a>
 
                                     ))}
                                     <a 
