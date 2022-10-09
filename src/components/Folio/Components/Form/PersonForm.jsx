@@ -3,8 +3,9 @@ const PersonForm = () => {
         <>
             
             <form autoComplete="off"
-            
+                netlify
                 data-netlify="true"
+                name="contact"
                 >
                 <a name={4} href="/#" rel="noreferrer"> </a>
                 <div className="w-3/5  container mx-auto mt-[12rem]">
@@ -15,6 +16,7 @@ const PersonForm = () => {
                         <input
                             id="email"
                             type={"email"}
+                            name="email"
                             required
                             className='input text-white input-md w-full mb-4 block px-2.8 pb-2.5 pt-4 text-sm  bg-transparent rounded-lg border-1 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer'
 
@@ -30,6 +32,7 @@ const PersonForm = () => {
                         <textarea
                             id="message"
                             required
+                            name="message"
                             rows={4}
                             className='input input-md w-full mb-4 block px-2.8 pb-2.5 pt-4 text-sm text-white bg-transparent rounded-lg border-1 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer'
 
