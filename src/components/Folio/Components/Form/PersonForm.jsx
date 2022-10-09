@@ -2,7 +2,10 @@ const PersonForm = () => {
     return (
         <>
             
-            <form autoComplete="off">
+            <form autoComplete="off"
+            
+                data-netlify="true"
+                >
                 <a name={4} href="/#" rel="noreferrer"> </a>
                 <div className="w-3/5  container mx-auto mt-[12rem]">
                     <h4 className="text-slate-300 font-bold text-[2rem] text-center mb-3">Degame tu inquietud o saludame..!</h4>
