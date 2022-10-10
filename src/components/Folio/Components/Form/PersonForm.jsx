@@ -1,8 +1,55 @@
+import { useState } from "react";
+import { useForm } from "react-hook-form";
+import { toast } from "react-toastify";
+import { collection, doc,setDoc } from "firebase/firestore/lite";
+import { db } from "../../../../config/Firebase";
+
+
 const PersonForm = () => {
+    const [loading,setloading]=useState(false)
+    let styleToast= {
+        position: "top-right",
+        autoClose: 3000,
+        hideProgressBar: true,
+        closeOnClick: false,
+        pauseOnHover: true,
+        draggable: true,
+        progress: 0,
+        theme: "light",
+    }
+    
+    const {handleSubmit}=useForm();
+    const onSubmit=async()=>{
+        let correo=document.getElementById('email').value;
+        let mensaje=document.getElementById('message').value;
+       
+        const docRef=doc(collection(db,'new_message'))
+        setloading(true)
+        const upload={
+            id: docRef.id,
+            correo: correo,
+            mensaje: mensaje,
+        }
+        if(!correo){
+            toast.error("agrege Correo",styleToast);
+            document.getElementById('email').focus();
+            return;
+        }
+        if(!mensaje){
+            toast.error("agrege Mensaje",styleToast);
+            document.getElementById('message').focus();
+            return;
+        }
+        await setDoc(docRef,upload);
+        toast.success("Mensaje Enviado",styleToast)
+        setloading(false)
+    }
     return (
         <>
             
-            <form autoComplete="off"
+            <form 
+                onSubmit={handleSubmit(onSubmit)}
+                autoComplete='off'
                 netlify
                 data-netlify="true"
                 name="contact"
@@ -16,10 +63,7 @@ const PersonForm = () => {
                         <input
                             id="email"
                             type={"email"}
-                            name="email"
-                            required
                             className='input text-white input-md w-full mb-4 block px-2.8 pb-2.5 pt-4 text-sm  bg-transparent rounded-lg border-1 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer'
-
                         />
                         <label
                             htmlFor={"email"}
@@ -31,11 +75,7 @@ const PersonForm = () => {
                     <div className='relative w-full flex justify-center mb-4'>
                         <textarea
                             id="message"
-                            required
-                            name="message"
-                            rows={4}
                             className='input input-md w-full mb-4 block px-2.8 pb-2.5 pt-4 text-sm text-white bg-transparent rounded-lg border-1 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer'
-
                         />
                         <label
                             htmlFor={"message"}
@@ -49,7 +89,7 @@ const PersonForm = () => {
                         className="btn w-full bg-[#0a192f] border-cyan-600 hover:bg-[#0a192f]  text-cyan-600 mb-[5rem]"
                         type="submit"
                     >
-                        Enviar
+                       {loading ? 'Cargando...' : 'Enviar'} 
                     </button>
                 </div>
             </form>
