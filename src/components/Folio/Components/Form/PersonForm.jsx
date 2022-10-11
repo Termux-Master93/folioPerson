@@ -18,7 +18,7 @@ const PersonForm = () => {
         theme: "light",
     }
     
-    const {handleSubmit}=useForm();
+    const {handleSubmit,reset,register}=useForm();
     const onSubmit=async()=>{
         let correo=document.getElementById('email').value;
         let mensaje=document.getElementById('message').value;
@@ -33,16 +33,23 @@ const PersonForm = () => {
         if(!correo){
             toast.error("agrege Correo",styleToast);
             document.getElementById('email').focus();
+            setloading(false)
             return;
         }
         if(!mensaje){
             toast.error("agrege Mensaje",styleToast);
             document.getElementById('message').focus();
+            setloading(false)
             return;
         }
         await setDoc(docRef,upload);
         toast.success("Mensaje Enviado",styleToast)
         setloading(false)
+        reset()
+        document.getElementById('email').focus();
+
+
+        
     }
     return (
         <>
@@ -63,6 +70,7 @@ const PersonForm = () => {
                         <input
                             id="email"
                             type={"email"}
+                            {...register("email")}
                             className='input text-white input-md w-full mb-4 block px-2.8 pb-2.5 pt-4 text-sm  bg-transparent rounded-lg border-1 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer'
                         />
                         <label
@@ -75,6 +83,7 @@ const PersonForm = () => {
                     <div className='relative w-full flex justify-center mb-4'>
                         <textarea
                             id="message"
+                            {...register("message")}
                             className='input input-md w-full mb-4 block px-2.8 pb-2.5 pt-4 text-sm text-white bg-transparent rounded-lg border-1 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer'
                         />
                         <label
