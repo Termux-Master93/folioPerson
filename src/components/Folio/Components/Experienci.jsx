@@ -30,7 +30,7 @@ const Experienci = () => {
             iconGit: <BsGithub />,
             iconView: <FontAwesomeIcon icon={faShareFromSquare} />,
             linkCode: "https://github.com/Termux-Master93/folioPerson",
-            link: ""
+            link: "https://daywebsite.netlify.app/"
         },
         {
             id: 4,
