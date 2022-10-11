@@ -22,9 +22,9 @@ const icons = [
 const SectionIcons = () => {
     return (
         <>
-            <blockquote className="hidden sm:block  container m-auto w-full">
+            <blockquote className="hidden sm:block  container m-auto  w-full">
                 <div className=" grid grid-cols-2">
-                    <div className="grid sm:grid-cols-1 justify-self-start fixed top-[24rem]">
+                    <div className="grid sm:grid-cols-1 justify-self-start fixed top-[24rem] xl:ml-8">
                         <ul className='pb-2 block'>
                             {icons.map((icono, index) => (
                                 <li
@@ -46,7 +46,7 @@ const SectionIcons = () => {
                         </ul>
 
                     </div>
-                    <div className="grid sm:grid-cols-1 justify-self-end fixed top-[20rem]">
+                    <div className="grid sm:grid-cols-1 justify-self-end fixed top-[20rem] xl:mr-8">
                         <ul className="pb-2">
                             <li><p className='text-cyan-600 text-medium rotate-90 w-1 mb-[11rem]'>elvisaguile2@gmail.com</p></li>
                             <li><div className="h-[10rem] border w-0  border-x-white"></div></li>

@@ -1,9 +1,9 @@
 
 import {  FirebaseApp, initializeApp } from "firebase/app";
 import {Firestore, getFirestore} from 'firebase/firestore/lite';
-const firebaseConfig = {
+const firebaseConfig={
   apiKey: "AIzaSyCOJrK-mum61D4T_7lwN7hHJxGXo5JGEoI",
-  authDomain: "miapp-9d66e.firebaseapp.com",
+  authDomain:"miapp-9d66e.firebaseapp.com",
   projectId: "miapp-9d66e",
   storageBucket: "miapp-9d66e.appspot.com",
   messagingSenderId: "352132702985",
