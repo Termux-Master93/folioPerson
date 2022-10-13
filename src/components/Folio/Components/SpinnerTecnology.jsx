@@ -11,12 +11,12 @@ import  {SiFirebase,SiPhp} from 'react-icons/si';
 const SpinnerTecnology = () => {
     const listTecnology = [
         {
-            datTitle: 'JavaScript (EM6 +)',
+            datTitle: 'React JS',
             icon: <FaReact />,
             color: 'text-cyan-600'
         },
         {
-            datTitle: 'React JS',
+            datTitle: 'JavaScript (EM6 +)',
             icon: <IoLogoJavascript />,
             color: 'text-yellow-400'
         },
@@ -73,7 +73,7 @@ const SpinnerTecnology = () => {
     ]
     return (
 
-        <div className="flex justify-start ml-[25%] sm:ml-[12rem] md:ml-[15rem] mt-[-2.5rem]">
+        <div className="flex justify-start ml-[23%] sm:ml-[12rem] md:ml-[15rem] mt-[-2.5rem]">
             <div className="grid grid-cols-3 sm:grid-cols-4  gap-x-10 sm:gap-x-16">
                 {
                     listTecnology.map((tec, index) => (
