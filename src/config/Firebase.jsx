@@ -1,16 +1,16 @@
 
-import {  FirebaseApp, initializeApp } from "firebase/app";
-import {Firestore, getFirestore} from 'firebase/firestore/lite';
+import {initializeApp } from "firebase/app";
+import {getFirestore} from 'firebase/firestore/lite';
 const firebaseConfig={
-  apiKey: "AIzaSyCOJrK-mum61D4T_7lwN7hHJxGXo5JGEoI",
-  authDomain:"miapp-9d66e.firebaseapp.com",
-  projectId: "miapp-9d66e",
-  storageBucket: "miapp-9d66e.appspot.com",
-  messagingSenderId: "352132702985",
-  appId: "1:352132702985:web:16e179f572c7a3b3d569d8"
+  apiKey:  process.env.REACT_APP_FIREBASE_APIKEY,
+  authDomain:process.env.REACT_APP_FIREBASE_AUTHDOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECTID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGEBUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGINGSENDERID,
+  appId: process.env.REACT_APP_FIREBASE_APPID
 };
 
 // Initialize Firebase
-const app:FirebaseApp = initializeApp(firebaseConfig);
+const app= initializeApp(firebaseConfig);
 
-export const db: Firestore=getFirestore(app);
+export const db=getFirestore(app);
