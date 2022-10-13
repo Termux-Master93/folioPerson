@@ -22,7 +22,7 @@ const icons = [
 const SectionIcons = () => {
     return (
         <>
-            <blockquote className="hidden sm:block  container m-auto  w-full">
+            <blockquote className="hidden md:block  container m-auto  w-full">
                 <div className=" grid grid-cols-2">
                     <div className="grid sm:grid-cols-1 justify-self-start fixed top-[24rem] xl:ml-8">
                         <ul className='pb-2 block'>
