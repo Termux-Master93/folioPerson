@@ -58,7 +58,7 @@ const SectionIcons = () => {
             </blockquote>
 
             <div className="w-3/5 container mx-auto mt-[8rem] text-center">
-            <div className='sm:hidden pb-2 flex justify-center'>
+            <div className='lg:hidden pb-2 flex justify-center'>
                             {icons.map((icono, index) => (
                                 <p
                                     key={index}
