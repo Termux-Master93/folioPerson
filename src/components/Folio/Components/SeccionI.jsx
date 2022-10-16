@@ -10,7 +10,7 @@ const SeccionI=()=>{
                     <h1 className="text-gray-300 text-4xl sm:text-6xl mb-5 font-bold">Elvis Aguilera Santur.</h1>
                     <h2 className="text-gray-400 text-4xl sm:text-5xl mb-5 font-bold">Desarrollo cosas Web y Destok...!</h2>
                     <p className="text-gray-300 mb-5 text-1xl">
-                        <span className="text-cyan-600">Desarrollador Front end, </span>me gusta dar<br/>
+                        <span className="text-cyan-600">Desarrollador Front end Jr, </span>me gusta dar<br/>
                         y desarrollar mejoras informáticas, considero mi experiencia de apoyo<br/>
                         en dos sistemas desctock y un par Web como boleto de mi integración en tu<br/>
                         empresa o en brindarte solución.
