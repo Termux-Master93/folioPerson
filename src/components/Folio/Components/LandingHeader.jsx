@@ -49,10 +49,10 @@ const LandingHeader = () => {
                                 ))}
                                 <a 
                                     target="_BLANK"
-                                    href="https://drive.google.com/file/d/1s0l99QujKz0cNe9K3BmE66kL3CzNA5_d/view?usp=sharing"
+                                    href="https://drive.google.com/file/d/1tKc5Fg5JKZkjp_324GX47BEfyEVYHMmm/view?usp=sharing"
                                     rel="noreferrer"
                                         >
-                                    <li className="border border-cyan-600 px-1 py-1 text-gray-400 cursor-pointer"> Curricun Vitae</li>
+                                    <li className="border border-cyan-600 px-1 py-1 text-gray-400 cursor-pointer"> Curriculum Vitae</li>
                                 </a>
                             </ul>
                             <div className="dropdown dropdown-end lg:hidden">
