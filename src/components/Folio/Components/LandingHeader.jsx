@@ -66,11 +66,11 @@ const LandingHeader = () => {
                                     ))}
                                     <a 
                                         target="_BLANK"
-                                        href="https://drive.google.com/file/d/1s0l99QujKz0cNe9K3BmE66kL3CzNA5_d/view?usp=sharing"
+                                        href="https://drive.google.com/file/d/1tKc5Fg5JKZkjp_324GX47BEfyEVYHMmm/view?usp=sharing"
                                         rel="noreferrer"
                                         >
                                        
-                                    <li className="border border-cyan-600 py-1 text-cyan-600 ">Curricun Vitae</li>
+                                    <li className="border border-cyan-600 py-1 text-cyan-600 ">Curriculum Vitae</li>
                                     </a>
                                 </ul>
                             </div>
