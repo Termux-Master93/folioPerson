@@ -13,7 +13,7 @@ const WhoIam=()=>{
                            <span className="text-cyan-600">Como estas...!</span>, mi pasión
                             por desarrollar comenzó cuando decidí instalar en mi dispositivo móvil Termux APK, el
                             ejecutar un script me llevo a la investigación y desde ese entonces empece a aprender
-                            <span className="text-cyan-600">HTML y CSS..</span> </p><br/>
+                            <span className="text-cyan-600"> HTML y CSS..</span> </p><br/>
                         <p className="text-zinc-300 w-full">
                             El siguiente paso fue matricularme en él<span className="text-cyan-600"> (Instituto tecnológico privado "ISA SANTA ÁNGELA" PIURA-PERU) </span>
                             y empezar a aprender de manera autodidacta, en este trascurso tuve la oportunidad de integrarme con
