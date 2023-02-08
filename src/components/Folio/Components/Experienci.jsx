@@ -1,69 +1,9 @@
 import React from "react";
-import { faFolder, faShareFromSquare } from "@fortawesome/free-solid-svg-icons";
+import { faFolder, } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-import { BsGithub } from "react-icons/bs";
+import { folios } from "./constant/constant";
 
 const Experienci = () => {
-    const folios = [
-        {
-            id: 1,
-            title: "Punto de Venta para Ferretería",
-            parrafo: "Creación de Solución para Ventas y Compras de productos y control de almacén",
-            tecnology: ["Boostrap", " , ", " HTML 5", " , ", "PHP", "  ", "Jquery", " , ", "Css 3", " , ", "Myslq"],
-            iconGit: <BsGithub />,
-            link: "https://github.com/Termux-Master93/proyecto"
-        },
-        {
-            id: 2,
-            title: "Punto de Venta para Farmacia",
-            parrafo: "Solución para Ventas y Compras de medicamentos, control de almacén, apertura de caja, etc.",
-            tecnology: ["Boostrap", " , ", " HTML 5", " , ", "PHP", "  ", "Jquery", " , ", "Css 3", " , ", "Myslq"],
-            iconGit: <BsGithub />,
-            link: "https://github.com/Termux-Master93/sistemaFarmacia"
-        },
-        {
-            id: 3,
-            title: "Este Proyecto",
-            parrafo: "Folio Personal, con diseño minimalista, floatingInputs y targetas dinamicas.",
-            tecnology: ["React Js", " , ", "Talwind Css", " , ", "Javascript", " , ", " HTML 5", " , ", "Css 3", " , ", "Firebase"],
-            iconGit: <BsGithub />,
-            iconView: <FontAwesomeIcon icon={faShareFromSquare} />,
-            linkCode: "https://github.com/Termux-Master93/folioPerson",
-            link: "https://daywebsite.netlify.app/"
-        },
-        {
-            id: 4,
-            title: "Diseño de Sección Nosotros para Empresa Jurídica",
-            parrafo: "Sección amigable con tarjetas y diseño paralax",
-            tecnology: ["Boostrap", " , ", " HTML 5", " , ", "Css 3",],
-            iconGit: <BsGithub />,
-            iconView: <FontAwesomeIcon icon={faShareFromSquare} />,
-            linkCode: "https://github.com/Termux-Master93/nosotros",
-            link: "https://webcacecob.netlify.app/nosotros"
-        },
-        {
-            id: 5,
-            title: "GDLWEBCAN V1",
-            parrafo: "pagina desarrarrolada por fines academicos, se hace uso de librerias jquery",
-            tecnology: [" HTML 5", " , ", "Css 3", " , ", "Jquery", " , ", "JavaScript"],
-            iconGit: <BsGithub />,
-            iconView: <FontAwesomeIcon icon={faShareFromSquare} />,
-            linkCode: "",
-            link: "https://peaceful-brigadeiros-c7d9f7.netlify.app/"
-        },
-        {
-            id: 5,
-            title: "GDLWEBCAN V2",
-            parrafo: "pagina desarrarrolada por fines academicos, 100% rasponsive y carrucel automatico y infinito",
-            tecnology: [" HTML 5", " , ", "Css 3", ",", "Boostrap"],
-            iconGit: <BsGithub />,
-            iconView: <FontAwesomeIcon icon={faShareFromSquare} />,
-            linkCode: "https://github.com/Termux-Master93/git_GDLWEBCAP_BOOSTRAP",
-            link: "https://termux-master93.github.io/git_GDLWEBCAP_BOOSTRAP/site"
-        },
-
-    ]
 
     return (
         <div className="container mx-auto w-3/5 mt-[10rem]">

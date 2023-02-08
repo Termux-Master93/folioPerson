@@ -1,30 +1,8 @@
 import React from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-
+import { barNav } from "./constant/constant";
 const LandingHeader = () => {
-    const barNav = [
-        {
-            id: 1,
-            link: "Acerca de"
-        },
-        {
-            id: 2,
-            link: "Experiencia"
-        },
-        {
-            id: 3,
-            link: "Portafolios"
-        },
-        {
-            id: 4,
-            link: "Contacto"
-        },
-
-
-    ]
-
-
     return (
         <nav className={`container mx-auto w-10/12 sm:w-full bg-slate-900 opacity-100 drop-shadow-xl  sticky top-0 z-50`}>
             

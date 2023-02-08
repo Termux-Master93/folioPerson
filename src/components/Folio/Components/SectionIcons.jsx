@@ -1,24 +1,5 @@
 import React from 'react';
-import { FiFacebook } from "react-icons/fi";
-import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
-const icons = [
-    {
-        url: 'https://www.linkedin.com/in/elvis-aguilera-santur-aa58a2230/',
-        icon: <AiFillLinkedin />,
-        toltip: 'Linkedin'
-    },
-    {
-        url: 'https://github.com/Termux-Master93',
-        icon: <AiFillGithub />,
-        toltip: 'gitHub'
-    },
-    {
-        url: 'https://www.facebook.com/elvis.aguilera.3705',
-        icon: <FiFacebook />,
-        toltip: 'Faccebook'
-    }
-
-]
+import { icons } from './constant/constant';
 const SectionIcons = () => {
     return (
         <>

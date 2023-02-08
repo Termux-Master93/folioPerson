@@ -28,7 +28,7 @@ const WhoIam=()=>{
                     </div>
                     <div className="flex w-full content-center ml-[0rem] sm:ml-[3rem]">
                         <picture className="text-center relative  my-auto">
-                             <img src="assets/elvis.png" alt="imagen elvis"></img>
+                             <img src="assets/elvis.png" alt="imagen elvis" className="md:max-w-xs md:hover:scale-110 md:transition md:duration-300 md:ease-in-out"></img>
                         </picture>
      
                     </div>
